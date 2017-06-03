@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using HomeWork_1_Library.Models;
+using HomeWork_2_Library.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace HomeWork_1_Library.Controllers
+namespace HomeWork_2_Library.Controllers
 {
     public class HomeController : Controller
     {

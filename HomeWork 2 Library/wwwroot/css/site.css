@@ -6,11 +6,11 @@
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
-/* Set widths on the form inputs since otherwise they're 100% wide */
+/* Set widths on the form inputs since otherwise they're 200% wide */
 input,
 select,
 textarea {
@@ -20,12 +20,12 @@ textarea {
 /* Carousel */
 .carousel-caption p {
     font-size: 20px;
-    line-height: 1.4;
+    line-height: 2.4;
 }
 
 /* Make .svg files in the carousel display properly in older browsers */
 .carousel-inner .item img[src$=".svg"] {
-    width: 100%;
+    width: 200%;
 }
 
 /* Hide/rearrange for smaller screens */

@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "HomeWork_1_Library": {
+    "HomeWork_2_Library": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {

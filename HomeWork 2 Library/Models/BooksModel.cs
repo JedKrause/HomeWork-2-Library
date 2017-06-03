@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
-namespace HomeWork_1_Library.Models
+namespace HomeWork_2_Library.Models
 {
     public class BooksModel
     {

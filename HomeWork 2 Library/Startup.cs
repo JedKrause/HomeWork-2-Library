@@ -8,7 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-namespace HomeWork_1_Library
+namespace HomeWork_2_Library
 {
     public class Startup
     {

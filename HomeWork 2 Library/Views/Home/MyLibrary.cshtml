@@ -1,4 +1,4 @@
-﻿@model IEnumerable<HomeWork_1_Library.Models.BooksModel>
+﻿@model IEnumerable<HomeWork_2_Library.Models.BooksModel>
 
 @{
     ViewData["Title"] = "My Library";
@@ -8,37 +8,39 @@
 @section sidebar
 {
     <div class="sidebarContent">
-        <h2>Welcome</h2>
-        <h3>NavBar:</h3>
+        <h2>Navigation:</h2>
         <ul class="nav navbar-nav">
-            <li><a asp-area="" asp-controller="Home" asp-action="Index" style="color:white">Home</a></li>
-            <li><a asp-area="" asp-controller="Home" asp-action="AddBook" style="color:white">Add Book</a></li>
+            <li class="btn btn-primary"><a asp-area="" asp-controller="Home" asp-action="Index" style="color:white">Home</a></li>
+            <li class="btn btn-primary"><a asp-area="" asp-controller="Home" asp-action="AddBook" style="color:white">Add Book</a></li>
         </ul>
 </div>
 }
 @section Header
 {
-    <h4>View Your Library</h4>
+    <h4 class="panel-header text-center">View Your Library</h4>
 }
-<h4>My Library</h4>
-<div>
-    <table style="text-align:center;width:90%">
-        <thead>
-            <tr>
-                <th>Title</th>
-                <th>AuthorName</th>
-                <th>ISBN</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (HomeWork_1_Library.Models.BooksModel b in Model)
-            {
+
+<div class="panel-heading text-center" text-center">
+    <div class="panel-body">
+        <h4>My Library</h4>
+        <table class="table table-sm table-striped table-bordered" style="text-align:center;width:90%">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>AuthorName</th>
+                    <th>ISBN</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (HomeWork_2_Library.Models.BooksModel b in Model)
+                {
                 <tr>
                     <td>@b.Title</td>
                     <td>@b.AuthorName</td>
                     <td>@b.ISBN</td>
                 </tr>
-            }
-        </tbody>
-    </table>
+                }
+            </tbody>
+        </table>
+    </div>
 </div>

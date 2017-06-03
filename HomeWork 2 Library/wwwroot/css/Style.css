@@ -27,6 +27,7 @@ header, footer {
 }
 .sidebarContent{
     padding-left: 10px;
+    padding-right: 10px;
 }
 aside {
     width: 25%;
@@ -38,5 +39,11 @@ aside {
 footer {
     text-align: center;
     color: #fff;
+}
+
+.panel-success > .panel-heading {
+    color: inherit;
+    background-color: inherit;
+    border-color: inherit;
 }
 

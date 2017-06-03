@@ -6,16 +6,19 @@
 @section sidebar
 {
     <div class="sidebarContent">
-        <h2>Welcome</h2>
-        <h3>NavBar:</h3>
+        <h2>Navigation:</h2>
         <ul class="nav navbar-nav">
-            <li><a asp-area="" asp-controller="Home" asp-action="MyLibrary" style="color:white">My Library</a></li>
-            <li><a asp-area="" asp-controller="Home" asp-action="AddBook" style="color:white">Add Book</a></li>
+            <li class="btn btn-primary"><a asp-area="" asp-controller="Home" asp-action="MyLibrary" style="color:white">My Library</a></li>
+            <li class="btn btn-primary"><a asp-area="" asp-controller="Home" asp-action="AddBook" style="color:white">Add Book</a></li>
         </ul>
     </div>
 }
 @section Header
 {
-<h4>Welcome To My Library!</h4>    
+<h4 class="panel-header text-center">Welcome To My Library!</h4>    
 }
-<h4>Home Page</h4>
+<div class="panel-heading text-center">
+    <h4 class="panel-header text-center">Welcome to the My Library Home Page!</h4>
+    <img class="img-responsive center-block" src="~/Images/book-25155__340.png" alt="Books Photo" />
+</div>
+    

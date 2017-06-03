@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace HomeWork_1_Library.Models
+namespace HomeWork_2_Library.Models
 {
     public static class Repository
     {
