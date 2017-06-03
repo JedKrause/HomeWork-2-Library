@@ -1,0 +1,42 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrapper {
+    margin: 0 auto 0 auto;
+    width: 85%;
+}
+
+.content {
+    background-color: #3e3e3e;
+    color: #fff;
+    float: right;
+    width: 75%;
+}
+
+.content, aside {
+    min-height: 500px;
+}
+
+header, footer {
+    background-color: #3068cc;
+    height: 60px;
+    clear: both;
+    color:#fff;   
+}
+.sidebarContent{
+    padding-left: 10px;
+}
+aside {
+    width: 25%;
+    background-color: #4f4f4f;
+    float: left;
+    color: #fff;
+    
+} 
+footer {
+    text-align: center;
+    color: #fff;
+}
+

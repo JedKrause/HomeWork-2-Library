@@ -1,0 +1,44 @@
+﻿@model IEnumerable<HomeWork_1_Library.Models.BooksModel>
+
+@{
+    ViewData["Title"] = "My Library";
+    ViewData["Description"] = "My Library";
+    Layout = "~/views/shared/_Layout.cshtml";
+}
+@section sidebar
+{
+    <div class="sidebarContent">
+        <h2>Welcome</h2>
+        <h3>NavBar:</h3>
+        <ul class="nav navbar-nav">
+            <li><a asp-area="" asp-controller="Home" asp-action="Index" style="color:white">Home</a></li>
+            <li><a asp-area="" asp-controller="Home" asp-action="AddBook" style="color:white">Add Book</a></li>
+        </ul>
+</div>
+}
+@section Header
+{
+    <h4>View Your Library</h4>
+}
+<h4>My Library</h4>
+<div>
+    <table style="text-align:center;width:90%">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>AuthorName</th>
+                <th>ISBN</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (HomeWork_1_Library.Models.BooksModel b in Model)
+            {
+                <tr>
+                    <td>@b.Title</td>
+                    <td>@b.AuthorName</td>
+                    <td>@b.ISBN</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

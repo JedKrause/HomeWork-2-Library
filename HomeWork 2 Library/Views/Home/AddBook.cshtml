@@ -1,0 +1,46 @@
+﻿@model HomeWork_1_Library.Models.BooksModel
+@{
+    ViewData["Title"] = "Add Book";
+    ViewData["Description"] = "Add Book";
+    Layout = "~/views/shared/_Layout.cshtml";
+}
+@section sidebar
+{
+    <div class="sidebarContent">
+        <h2>Welcome</h2>
+        <h3>NavBar:</h3>
+        <ul class="nav navbar-nav">
+            <li><a asp-area="" asp-controller="Home" asp-action="Index" style="color:white">Home</a></li>
+            <li><a asp-area="" asp-controller="Home" asp-action="MyLibrary" style="color:white">My Library</a></li>
+        </ul>
+    </div>
+}
+@section Header
+{
+    <h4>Add a New Book!</h4>    
+}
+<h4>Add Book</h4>
+
+    <div>
+        <form asp-action="AddBook" method="post">
+            <div asp-validation-summary="All"></div>
+            <div>
+                <label asp-for="Title">Book Title:</label>
+                <input asp-for="Title" />
+            </div>
+            <div>
+                <label asp-for="AuthorName">Author Name:</label>
+                <input asp-for="AuthorName" />
+            </div>
+            <div>
+                <label asp-for="ISBN">ISBN:</label>
+                <input asp-for="ISBN" />
+            </div>
+           
+            <div>
+                <button type="submit">
+                    Submit New Book
+                </button>
+            </div>
+        </form>
+    </div>

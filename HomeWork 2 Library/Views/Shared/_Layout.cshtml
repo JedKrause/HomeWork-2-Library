@@ -1,0 +1,29 @@
+﻿@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <meta name="description" content=@ViewData["Description"] />
+    <link rel="stylesheet" href="@Href("~/css/style.css")"
+          type="text/css" />
+</head>
+<body>
+
+    <div class="wrapper">
+        <header>
+            @RenderSection("Header")
+        </header>
+        <aside>
+            @RenderSection("sidebar")
+        </aside>
+        <div class="content">
+            @RenderBody()
+        </div>
+        <footer>
+            &copy; @DateTime.Now.Year
+        </footer>
+    </div>
+</body>
+</html>

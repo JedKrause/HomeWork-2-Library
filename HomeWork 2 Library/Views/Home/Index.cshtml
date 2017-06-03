@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    ViewData["Description"] = "Home";
+    Layout = "~/views/shared/_Layout.cshtml";
+}
+@section sidebar
+{
+    <div class="sidebarContent">
+        <h2>Welcome</h2>
+        <h3>NavBar:</h3>
+        <ul class="nav navbar-nav">
+            <li><a asp-area="" asp-controller="Home" asp-action="MyLibrary" style="color:white">My Library</a></li>
+            <li><a asp-area="" asp-controller="Home" asp-action="AddBook" style="color:white">Add Book</a></li>
+        </ul>
+    </div>
+}
+@section Header
+{
+<h4>Welcome To My Library!</h4>    
+}
+<h4>Home Page</h4>
